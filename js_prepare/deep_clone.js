@@ -3,6 +3,7 @@ function deepClone(obj) {
     let objArray = Array.isArray(obj)?[]:{};
     if (obj && typeof obj === "object"){
         for (key in obj) {
+            console.log(key);
             // 循环遍历内部的参数，判断是否为自己的参数
             if (obj.hasOwnProperty(key)){
                 // 如果还是对象，递归调用
